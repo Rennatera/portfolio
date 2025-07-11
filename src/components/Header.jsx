@@ -1,15 +1,18 @@
 import React from 'react';
-import brFlag from '../assets/flag-br.png';
-import usFlag from '../assets/flag-us.png';
-import esFlag from '../assets/flag-es.png';
+import brFlag from "../assets/brasil.png";
+import usFlag from "../assets/eua.png";
+import esFlag from "../assets/espanha.png";
+import { useLanguage } from '../context/LanguageContext'; // se você estiver usando contexto
 
 function Header() {
+  const { setLanguage } = useLanguage(); // se estiver usando context
+
   return (
     <header className="bg-gray-900 text-white py-4 px-6 shadow-md fixed w-full z-50">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
-        
+      <div className="max-w-7xl px-6 mx-auto flex items-center justify-between py-4">
+
         {/* Nome à esquerda */}
-        <div className="text-5xl font-bold text-blue-400">Renato Cossi</div>
+        <div className="text-2xl font-bold text-blue-400">Renato Cossi</div>
 
         {/* Navegação */}
         <nav className="hidden md:flex gap-6">
@@ -20,16 +23,17 @@ function Header() {
 
         {/* Botões de idioma */}
         <div className="flex gap-2">
-          <button className="w-8 h-8 rounded-full overflow-hidden border border-white">
+          <button onClick={() => setLanguage('pt')} className="w-8 h-8 rounded-full overflow-hidden border border-white">
             <img src={brFlag} alt="Português" className="w-full h-full object-cover" />
           </button>
-          <button className="w-8 h-8 rounded-full overflow-hidden border border-white">
+          <button onClick={() => setLanguage('en')} className="w-8 h-8 rounded-full overflow-hidden border border-white">
             <img src={usFlag} alt="English" className="w-full h-full object-cover" />
           </button>
-          <button className="w-8 h-8 rounded-full overflow-hidden border border-white">
+          <button onClick={() => setLanguage('es')} className="w-8 h-8 rounded-full overflow-hidden border border-white">
             <img src={esFlag} alt="Español" className="w-full h-full object-cover" />
           </button>
         </div>
+
       </div>
     </header>
   );
