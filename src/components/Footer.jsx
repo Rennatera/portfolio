@@ -1,4 +1,7 @@
 import React from 'react';
+import linkedinIcon from '../assets/LinkedIn.png';
+import githubIcon from '../assets/icons8-github-50.png';
+
 
 function Footer() {
   return (
@@ -16,16 +19,18 @@ function Footer() {
               href="https://www.linkedin.com/in/renato-cossi/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
+              className="flex items-center gap-2 text-grey-400 hover:text-blue-300 transition"
             >
+              <img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10" />
               LinkedIn
             </a>
             <a
               href="https://github.com/Rennatera"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-gray-100 transition"
+              className="flex items-center gap-2 text-grey-300 hover:text-gray-100 transition"
             >
+              <img src={githubIcon} alt="GitHub" className="w-10 h-10" />
               GitHub
             </a>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Carrossel from './components/Carrossel';
 import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
@@ -40,13 +41,14 @@ function App() {
             <img
               src="/src/assets/foto-perfil.jpeg"
               alt="Foto de Renato"
-              className="w-48 h-48 object-cover rounded-full border-4 border-blue-400 shadow-lg"
+              className="w-80 h-80 object-cover rounded-full border-4 border-blue-400 shadow-lg"
             />
           </div>
         </div>
       </main>
 
       <About />
+      <Carrossel />
       <Footer />
     </>
   );
