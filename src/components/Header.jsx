@@ -12,11 +12,11 @@ function Header() {
       <div className="max-w-7xl px-6 mx-auto flex items-center justify-between py-4">
 
         {/* Nome à esquerda */}
-        <div className="text-2xl font-bold text-blue-400">Renato Cossi</div>
+        <div className="text-2xl font-bold text-blue-400">Portfólio RSOC</div>
 
         {/* Navegação */}
         <nav className="hidden md:flex gap-6">
-          <a href="#sobre" className="hover:text-blue-400 transition">Sobre</a>
+          <a href="#about" className="hover:text-blue-400">Sobre</a>
           <a href="#projetos" className="hover:text-blue-400 transition">Projetos</a>
           <a href="#contato" className="hover:text-blue-400 transition">Contato</a>
         </nav>
