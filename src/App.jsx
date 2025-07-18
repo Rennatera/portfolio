@@ -4,6 +4,8 @@ import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Typewriter from 'typewriter-effect';
+//import ContactForm from './components/ContactForm';
+
 
 
 function App() {
@@ -13,15 +15,16 @@ function App() {
       
       <main className="pt-20 w-full bg-gray-900 text-white">
         
+        
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between px-10 md:px-14 lg:px-6 py-6">
           
           {/* Texto à esquerda */}
           <div className="md:w-1/2 text-left">
-            <h1 className="text-8xl font-bold text-blue-400 mb-2">Olá, sou</h1>
-            <h2 className="text-5xl font-bold text-white mb-4">
+            <h1 className="text-5xl font-bold text-blue-400 mb-2">Olá, sou</h1>
+            <h2 className="text-4xl font-bold text-white mb-4">
               <Typewriter
                 options={{
-                  strings: ['Analista de negócios', 'Renato Cossi'],
+                  strings: ['Renato Cossi', 'Business Analyst'],
                   autoStart: true,
                   loop: true,
                   delay: 75,
@@ -30,7 +33,7 @@ function App() {
                 }}
               />
             </h2>
-            <p className="text-3xl font-bold text-white mb-10">
+            <p className="text-1xl text-white mb-10">
               Sou movido pelo desafio de alinhar tecnologia aos objetivos de negócio. Trabalho com foco em colaboração entre áreas, clareza nos processos e entrega de soluções que realmente fazem a diferença.
             </p>
             <div className="flex gap-4">
@@ -44,12 +47,6 @@ function App() {
             </div>
           </div>
 
-
-
-
-
-
-
           {/* Imagem à direita<div className="md:w-1/2 mt-10 md:mt-0 flex justify-center"> */}
           
           <div className="md:w-1/2 mt-16 md:mt-20 mb-16 md:mb-20 flex justify-center">
@@ -57,7 +54,7 @@ function App() {
             <img
               src="/src/assets/foto-perfil.jpeg"
               alt="Foto de Renato"
-              className="w-100 h-100 object-cover rounded-full border-4 border-blue-400 shadow-lg"
+              className="w-80 h-80 object-cover rounded-full border-4 border-blue-400 shadow-lg"
             />
           </div>
         </div>
@@ -66,6 +63,8 @@ function App() {
       <About />
       <Carrossel />
       <Footer />
+
+      
     </>
   );
 }
