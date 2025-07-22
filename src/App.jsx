@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Typewriter from 'typewriter-effect';
+import fotoPerfil from './assets/foto-perfil.jpeg';
 //import ContactForm from './components/ContactForm';
 
 
@@ -50,9 +51,8 @@ function App() {
           {/* Imagem à direita<div className="md:w-1/2 mt-10 md:mt-0 flex justify-center"> */}
           
           <div className="md:w-1/2 mt-16 md:mt-20 mb-16 md:mb-20 flex justify-center">
-
             <img
-              src="/src/assets/foto-perfil.jpeg"
+              src={fotoPerfil}
               alt="Foto de Renato"
               className="w-80 h-80 object-cover rounded-full border-4 border-blue-400 shadow-lg"
             />
