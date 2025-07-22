@@ -5,7 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 // ✅ Corrija aqui os imports das imagens
 import easy002 from '../assets/easy002.png';
 import molinos3 from '../assets/molinos001.png';
-import Jacto from "../assets/Jacto01.png";
+import Jacto01 from "../assets/Jacto01.png";
 import carrossel3 from '../assets/carrossel3.png';
 
 function Carrossel() {
